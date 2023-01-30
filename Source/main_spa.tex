@@ -1,0 +1,134 @@
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set language
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\begin{center}
+\Huge{Francesc Mut Mollà} \\
+\small{Administrador de sistemas}
+
+\end{center}
+%\hfill{\it\footnotesize Actualizado  \today}
+
+% --- Contact information and other items ---
+
+\vspace{1cm} 
+\begin{center}
+\begin{tabular}{lll}
+% Line 1: Email, GitHub, office location
+\textbf{Correo}: \href{mailto:xescmut7@outlook.com}{xescmut7@outlook.com}&
+\hspace{0.15in} \textbf{GitHub}: \href{https://github.com/sirazazel}{//sirazazel}    &
+\hspace{0.15in} 	\textbf{DNI}: 41542850C \\
+
+% Line 2: Phone number, LinkedIn, citizenship
+\textbf{LinkedIn}: \href{https://www.linkedin.com/in/francesc-mut-moll%C3%A0-70b918224}{Francesc Mut Mollà} & 
+\hspace{0.15in} \textbf{Localidad}: Llucmajor, Illes Balears &
+\hspace{0.15in} \textbf{Teléfono}: \href{tel: +34 670 811 253}{670 811 253}
+
+\end{tabular}
+\end{center}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+% \nohyphens{\color{OliveGreen}{Intereses personales}}
+% & \\
+% & \\
+
+% --- Section: Experience ---
+
+\color{OliveGreen}{Experiencia laboral} 
+& \textbf{Solucions Informàtiques Icono, SL} \hfill Palma, Illes Balears \\ 
+& \color{OliveGreen}{Funciones:} \\
+& Asesoría informática enfocada al sector educativo. \\ 
+& Google Workspace for Education \\
+& Gestión de SAT autorizado por Lenovo y Acer. \\
+& \hfill Abril 2021 - Actualidad \\
+& \\
+
+% --- Section: Education ---
+
+\color{OliveGreen}{Formación} 
+& \textbf{CIFP Francesc de Borja Moll} \hfill Palma, Illes Balears \\ 
+& CFGS Administració de Sistemes en Xarxa \hfill Septiembre 2020 - Junio 2022 \\
+& \\
+
+
+& \textbf{Universitat de les Illes Balears} \hfill Palma, Illes Balears \\
+& Grau en Enginyeria Telemàtica (GTTT) \hfill Septiembre 2018 - Junio 2020\\
+& \\
+
+& \textbf{Institut de Llucmajor} \hfill Llucmajor, Illes Balears \\
+& Batxillerat en Ciències i Tecnologia \hfill Septiembre 2016 - Juny 2018\\
+& \\
+
+% --- Section: Various skills (programming, software, languages, etc.) ---
+
+{\color{OliveGreen}{Habilidades}} 
+& \textbf{Certificaciones} \\
+& ITIL Foundation Certificate in IT Service Management, Edition 4 \\
+& \textbf{Administración de sistemas} \\
+& Gestión de Firewalls PFSense. \\
+& XCP-ng, TrueNAS Scale, Active Directory \\
+& Gestión de contenedores Docker. \\
+& \textbf{Desarrollo}\\
+& Bash, JavaScript, PHP\\
+& LaTeX, Markdown\\
+& MongoDB, MariaDB.\\
+& \textbf{Redes} \\
+& Experiencia en montaje de redes corporativas en entornos educativos. \\
+& \textbf{Idiomas} \\
+& Castellano (nativo) \\
+& Català (nativo)\\
+& English (avanzado)\\
+& \\
+& \textbf{Otros datos de interés} \\
+& Carné de conducir, coche propio y disponibilidad geográfica. \\
+& 
+\cr
+
+% --- Section: Other interests/hobbies ---
+
+% \nohyphens{\color{OliveGreen}{Otros intereses y aficiones}} & Mis aficiones son la fotografía de paisaje y la reparación de electrónica.\\
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}
